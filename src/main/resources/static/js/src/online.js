@@ -5,7 +5,7 @@ var score=new Array(0, 0, 0, 0, 0);
 var flag=[];
 var ans=new Array("Unanswered","Unanswered", "Unanswered","Unanswered","Unanswered");
 var temp="";
-var total_seconds=60*0.5;
+var total_seconds=60*5;
 var c_minutes=parseInt(total_seconds/60);
 var c_seconds=parseInt(total_seconds%60);
 var ques=[];
@@ -337,7 +337,7 @@ function Finish()
    			success : function(result) {
    				if(result.status=="Done")
    				{
-   					alert("Success!")
+   					//alert("Success!")
    					console.log(result);
 	   				 if(!timeover)
 	   			    {

@@ -1,0 +1,42 @@
+<!--  Displays the questions for the quiz using where the questions are loaded using AJAX. -->
+
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <title>Online Logical Reasoning Test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css"  th:href="@{/css/QuestionStyle.css}" >
+	<link rel="stylesheet" type="text/css"  th:href="@{/css/QuestionBackground.css}">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
+	<script type="text/javascript" th:src="@{/js/src/online.js}" ></script>
+	
+</head>
+
+<body >
+
+	<div id="center-div">
+		<div style="font-weight:bold" id="quiz-time-left" ></div>
+		<div id="q_d1" >
+			<label id="q_l1" ></label>
+		</div>
+		<div id="q_d2" >
+			<input class="button" type="button" id="1" value="1" onclick="que(this)" />
+			<input class="button" type="button" id="2" value="2" onclick="que(this)" />
+			<input class="button" type="button" id="3" value="3" onclick="que(this)" />
+			<input class="button" type="button" id="4" value="4" onclick="que(this)" />
+			<input class="button" type="button" id="5" value="5" onclick="que(this)" />
+		</div>
+		<div id="q_d3" >
+			<input class="butn" type="button" id="q_b4" value="Save" onclick="Save()" />
+			<input class="butn" type="button" id="q_b5" value="Mark for review" onclick="Marked()" />
+			<input class="butn" type="button" id="q_b6" value="Next" onclick="Next()" />
+			<input class="butn" type="button" id="q_b7" value="Finish" onclick="Finish()" />
+			<input class="butn" type="button" id="q_b8" value="Previous" onclick="Previous()" />
+		</div>
+		<div id="q_d4"></div>
+	</div>
+	
+</body>
+</html>

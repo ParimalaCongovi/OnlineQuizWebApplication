@@ -1,0 +1,117 @@
+body{
+	
+	background-image:url("online1.jpg");
+	font-family:"Trebuchet MS";
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-size: 10px;
+	color:#FFFAF0;
+}
+
+h1{
+	
+	position:relative;
+	top:20%;
+	font-weight:bold;
+	text-align:center;
+	font-size:40px;
+}
+
+span{
+	
+	position:relative;
+	top:70%;
+    left:45%;
+}
+
+li{
+	
+	font-size:25px;
+}
+
+#questionpalette{
+	
+	position:relative;
+	left:5%;
+}
+
+
+#p1{
+	
+    position: absolute;
+    top:10%;
+    left:30%;
+}
+
+#center-div{
+	
+	  position: absolute;
+	  margin: auto;
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  background-color:rgba(0,0,0,0.2);
+}
+  
+ #d1{
+		position:relative;
+		font-size:23px;
+		font-family:Trebuchet MS;
+		left:5%;
+		top:60%;
+		color:#FFFAF0;
+		width:85%;
+}
+
+#d2{
+	
+	position:relative;
+	text-align:center;
+	margin-left:45%;
+}
+
+#submit1 {
+	
+    position:absolute;
+    top:40%;
+    left:45%;
+}
+
+.butn {
+	
+	  box-shadow: none !important;
+	  border: 2px solid black;
+	  width: 150px;
+	  height: 50px;
+	  font-family:Trebuchet MS;
+	  font-size: 20px;
+	  border: none;
+	  background-color:#FFFAF0;
+	  border-radius: 25px;
+	  outline: 0;
+	  color:black;
+
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+
+}
+
+.butn:hover{
+	
+  width: 150px;
+  height: 60px;
+  border-radius: 45px;
+  font-size: 30px;
+  background-color:#FFFAF0;
+}
+
+.button{
+	
+	padding:12px 12px;
+}
+

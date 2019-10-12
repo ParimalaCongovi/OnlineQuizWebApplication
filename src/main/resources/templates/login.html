@@ -1,0 +1,42 @@
+<!-- Displayed on click of the Log In button. Gets User's Name and Password credentials -->
+
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <title>Online Logical Reasoning Test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css"  th:href="@{/css/HomePageStyle.css}">
+    
+</head>
+
+<body>
+
+	<div id="center-div">
+		<h1> Online Logical Reasoning Test </h1>
+		<div id="d1">
+		
+		    <form action="#" th:action="@{/login}" th:object="${student}" method="post">
+		    
+		    	<p id='p1' th:if="${UserError}" >Invalid User. Please Sign up.</p> 
+		     	<p id='p2' th:if="${PasswordError}"> Incorrect Password. Please enter the correct password. </p>
+		     
+		    	<label id="l1"> NAME <br> </label>
+		    	<input type="text" id="t2" th:field="*{studentName}"  required/><br><br><br>
+		        <label id="l2"> PASSWORD  <br> </label>
+		        <input type="password" id="t1" th:field="*{studentPassword}"  required/><br><br>
+		        
+		        <p id='log'><input type="submit" class="butn" value="Log In" /></p> 
+		       
+		     </form>
+		     <div id='d3'>
+		 		 <a href="/student" ><button class="butn" > Sign Up</button></a>
+			</div>
+	    </div>
+    </div>
+    
+    
+    
+</body>
+</html>

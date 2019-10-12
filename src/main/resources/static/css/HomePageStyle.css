@@ -1,0 +1,117 @@
+h1{
+	
+	position:relative;
+	font-size:40px;
+	font-family:helvetica;
+	text-align:center;
+	top:15%;
+	color:#FFFAF0;
+}
+ #d2{
+ 
+      position:absolute;
+      top:10%;
+      right:0;
+      color:white;
+}
+
+#log,#d3{
+	
+	position:relative;
+    left:23%;
+}   
+    
+body{
+
+    background-image:url("online1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+*{
+	
+	font-family:helvetica;
+	font-weight:bold;
+	font-size:20px;
+}
+
+#submit{
+	
+	position:absolute;
+	left:35%;
+	color:black;
+}
+
+#d1{
+	
+	position:absolute;
+	top:32%;
+	left:38%;
+	width:500px;
+	height:300px;
+	//background-color:white;//
+
+}
+
+#l1,#l2,#l3{
+	
+	position:relative;
+	left:10%;
+	color:#FFFAF0;
+}
+
+#t1,#t2,#t3{
+	
+	position:relative;
+	left:10%;
+	color:black;
+}
+
+#p1,#p2,#p3{
+	
+	position:relative;
+	left:10%;
+	 color:gold;
+}
+
+#center-div{
+	
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:  rgba(0,0,0,0.2);
+}
+  
+.butn {
+	
+  box-shadow: none !important;
+  border:2px solid white;
+  width: 120px;
+  height: 50px;
+  font-family:palatino;
+  font-size: 20px;
+  background-color:transparent;
+  border-radius: 25px;
+  outline: 0;
+  color:gold;
+
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+
+}
+
+.butn:hover{
+
+  width: 170px;
+  height: 60px;
+  border-radius: 45px;
+  font-size: 30px;
+  background-color:  transparent;
+}

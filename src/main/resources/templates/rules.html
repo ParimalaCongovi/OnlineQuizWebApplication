@@ -1,0 +1,55 @@
+<!-- Displays the instructions of the quiz on successful Log In of the User. -->
+
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <title>Online Logical Reasoning Test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" th:href="@{/css/Rules.css}">
+     <script th:inline="javascript">
+	     window.onload = function() 
+	     {
+	    	 var message =[[${name}]]
+	    	 sessionStorage.setItem("name",[[${name}]]);
+	     }
+	     
+	     function openPopup(){
+	    	 var winpopup = window.open("http://localhost:8080/start","Online Logical Reasoning Test","height=1500,width=1500");
+	     }
+	 </script> 
+	  
+</head>
+
+<body style="font-size:10px;">
+
+	<div id="center-div">
+		<form action="#" >
+			<h1 style="color:gold;"> INSTRUCTIONS </h1>
+			<div id="d1">
+			
+				1.Total duration of the examination is 15 minutes.<br>
+				2.The countdown timer in the top right corner of the screen will display the remaining time available for 
+				you to complete the test.When the timer reaches zero the examination will end by itself.<br>
+				3.The Question Palette displayed on the right side of screen will show the status of each question using one of the following symbol.<br>
+				<div id="questionpalette">
+					<br><input class="button" type="button" id="1" value="1" style="background-color:white" /> You have not visited the question yet <br><br>
+					<input class="button" type="button" id="2" value="2" style="background-color:red"/> You have not answered the question <br><br>
+					<input class="button" type="button" id="3" value="3"  style="background-color:#7fff00"/> You have answered the question <br><br>
+					<input class="button" type="button" id="4" value="4" style="background-color:#ffc300"/> Question is answered and Marked for Review <br>
+				</div><br>
+				The Marked for review status for a question simply indicates that you would like to look at the question again.<br>
+				4.Click on Save to save the answer for a particular question.<br>
+				5.Questions whose answers haven't been saved wouldn't be considered for evaluation.<br>
+				6.You can navigate to a question either by using the Next & Previous buttons or by clicking on the question buttons.<br>
+				
+				<br><input type="checkbox"  onchange="document.getElementById('submit').disabled = !this.checked;" > I have read the instructions and I am ready to begin the test. <br>
+				<br><span><input type="button" id ="submit" class="butn"  disabled value="Start Test" onclick="openPopup()"  /></span>
+			</div>
+			
+		</form>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!--  Home page of the Web Application. Displays a form containing Name, Email and Password elements. -->
+
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <title>Online Logical Reasoning Test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css"  th:href="@{/css/HomePageStyle.css}">
+    <script>
+    	function customReset()
+    	{
+    		document.getElementById('t2').value="";
+    		document.getElementById('t3').value="";
+    	}
+    </script>
+    
+</head>
+
+<body>
+
+	<div id="center-div" >
+		<h1> Online Logical Reasoning Test </h1>
+		<div id="d1" >
+			<form action="#" th:action="@{/student}" th:object="${student}" method="post">
+			
+			    	<p id='p3' th:if="${studentError}" >You are an existing user. <br>Please Log in.</p> 
+			    	<label id="l1"> NAME <br> </label>
+			    	<input type="text" id="t2" th:field="*{studentName}" required /><br><br><br>
+			    	<label id="l3"> EMAIL <br> </label>
+			        <input type="email" id="t3" th:field="*{studentEmail}" required /><br><br><br>
+			        <label id="l2"> PASSWORD  <br> </label>
+			        <input type="password" id="t1" th:field="*{studentPassword}" required /><br><br>
+			        
+			        <p><input type="submit" class="butn" value="Submit" />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 
+			        <input type="button" value="Reset" class="butn" onclick="customReset();"/></p>
+			        
+			 </form>
+		 </div>
+    </div>
+    
+	<div id="d2" >Already  an existing user???<br><br>
+	<a href="/login" ><button class="butn" > Log in</button></a>
+	</div>
+	
+</body>
+</html>

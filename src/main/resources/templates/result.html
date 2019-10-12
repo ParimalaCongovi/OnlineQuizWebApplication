@@ -1,0 +1,36 @@
+<!-- Confirms the submission of the test. -->
+
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <title>Online Logical Reasoning Test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css"  th:href="@{/css/CommonStyle.css}" >
+    <script>
+	    window.onload=function()
+	    {
+	    	//alert(sessionStorage.getItem("attempt"));
+	    	document.getElementById("attempt_div").innerHTML=sessionStorage.getItem("attempt");
+	    }
+    </script>
+    
+</head>
+
+<body>
+	<div id="center-div">
+		<form action="#" th:action="@{/final}" method="get">
+			
+				<div id='style="font-size:30px;">
+				<p>Number of questions answered</p>
+				<div id="attempt_div"></div>
+				</div>
+				<div>Do you really want to submit?</div><br><br><br>
+				<input type="submit" value="Submit" id="submit1" class="butn" />
+			
+		</form>
+	</div>
+	
+</body>
+</html>

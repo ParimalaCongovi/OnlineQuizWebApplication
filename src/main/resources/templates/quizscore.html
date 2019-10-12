@@ -1,0 +1,31 @@
+<!-- Displays the result summary of the user. -->
+
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <title>Online Logical Reasoning Test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css"  th:href="@{/css/ResultStyle.css}" >
+    <link rel="stylesheet" type="text/css"  th:href="@{/css/QuizScoreStyle.css}" >
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
+	<script type='text/javascript' th:src="@{/js/src/resultonline.js}" ></script>
+	
+</head>
+
+<body >
+
+	<div id='center-div'>
+		<h1> RESULT SUMMARY</h1>
+		<div id='d1'> </div>
+	</div>
+	<div class='viewresult'> <button onclick='checkans()' class='butn10' id='viewresult'>View Result</button></div>
+	<div id='b1'>
+		
+	</div><br>
+	
+	<div id='resultans' class='rs1'></div>
+	
+</body>
+</html>

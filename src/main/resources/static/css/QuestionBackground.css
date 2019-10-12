@@ -1,0 +1,100 @@
+body {
+	
+		background-image:url("online1.jpg");
+		font-family:Trebuchet MS;
+		background-repeat: no-repeat;
+		background-size: cover;
+		font-size: 20px;
+		color:#FFFAF0;
+}
+
+#quiz-time-left{
+	
+	    position:absolute;
+		font-family:Trebuchet MS;
+		font-size:30px;
+		color:#FFD433;
+		left:80%;
+		top:6%;
+}
+
+#center-div{
+	
+	  position: absolute;
+	  margin: auto;
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  background-color:  rgba(0,0,0,0.2);
+ }
+  
+ #d1{
+ 
+	position:relative;
+	font-size:40px;
+	font-family:Trebuchet MS;
+	text-align:center;
+	top:60%;
+	color:black;
+}
+
+#d2{
+	
+	position:relative;
+	text-align:center;
+	margin-left:45%;
+}
+
+.butn {
+	
+	  box-shadow: none !important;
+	  border: 2px solid black;
+	  width: 120px;
+	  height: 50px;
+	  font-family:Trebuchet MS;
+	  font-size: 20px;
+	  font-weight:bold;
+	  background-color:#FFFAF0;
+	  border-radius: 25px;
+	  outline: 0;
+  	  color:black;
+	  -webkit-transition: all 0.5s ease;
+	     -moz-transition: all 0.5s ease;
+	      -ms-transition: all 0.5s ease;
+	          transition: all 0.5s ease;
+}
+
+.butn:hover{
+	
+	  width: 170px;
+	  height: 60px;
+	  border-radius: 45px;
+	  font-size: 30px;
+	  background-color:#FFFAF0;
+}
+.button{
+	
+	  box-shadow: none !important;
+	  border: 2px solid black;
+	  width: 85px;
+	  height: 50px;
+	  font-family:Trebuchet MS;
+	  font-size: 20px;
+	  border: none;
+	  background-color:#FFFAF0;
+	  border-radius: 25px;
+	  outline: 0;
+	  color:black;
+	  font-weight:bold;
+
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+
+}
+
+

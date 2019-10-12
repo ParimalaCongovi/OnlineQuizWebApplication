@@ -1,0 +1,10 @@
+com\anz\SpringBootPractise\Controller\StudentController.class
+com\anz\SpringBootPractise\SimpleWebAppDataApplication.class
+com\anz\SpringBootPractise\Service\StudentService.class
+com\anz\SpringBootPractise\Repository\QuestionRepository.class
+com\anz\SpringBootPractise\Controller\StudentRestController.class
+com\anz\SpringBootPractise\model\Response.class
+com\anz\SpringBootPractise\Repository\StudentRepository.class
+com\anz\SpringBootPractise\model\Question.class
+com\anz\SpringBootPractise\model\Student.class
+com\anz\SpringBootPractise\Service\QuestionService.class
